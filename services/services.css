@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo-box {
+  margin-left: 16px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box__menu {
+  margin-right: 20px;
+}
+
+.logo-box::after {
+  content: "";
+  width: 2px;
+  height: 32px;
+  background-color: #FF3E79;
+}
+
+.logo-box__logo {
+  margin-left: 20px;
+}
+
+.header__links {
+  display: flex;
+  margin-right: 40px;
+}
+
+.header__button {
+  margin: 0 16px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.contacts::after {
+  content: "";
+  width: 2px;
+  height: 32px;
+  margin: 0 20px;
+  background-color: #EAEAEA;
+  /*закруглить края палки*/
+}
+
+.actions {
+  display: flex;
+}
+
+.actions__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.b-button {
+  width: 40px;
+  height: 40px;
+
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  border: none;
+}
+
+.menu-button {
+  background-image: url("../assets/icons/hamburger-icon.svg");
+}
+
+.phone-button {
+  background-image: url("../assets/icons/tel.svg");
+}
+
+.message-button {
+  background-image: url("../assets/icons/message.svg");
+}
+
+.contact-button {
+  background-image: url("../assets/icons/contact.svg");
+}
+
+.search-button {
+  background-image: url("../assets/icons/search.svg");
+}
+
+.tools-button {
+  background-image: url("../assets/icons/tools.svg");
+}
+
+.logo {
+  width: 96px;
+  height: 50px;
+  background-image: url("../assets/icons/logo.svg");
+}
