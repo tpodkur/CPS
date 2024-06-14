@@ -14,6 +14,20 @@ body {
   margin-left: 16px;
 }
 
+.header__separator {
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+}
+
+.header__contacts {
+  margin-right: 16px;
+}
+
+.header__actions {
+  margin-left: 16px;
+}
+
 .logo-box {
   display: flex;
   align-items: center;
@@ -21,13 +35,6 @@ body {
 
 .logo-box__menu {
   margin-right: 20px;
-}
-
-.logo-box::after {
-  content: "";
-  width: 2px;
-  height: 32px;
-  background-color: #FF3E79;
 }
 
 .logo-box__logo {
@@ -50,15 +57,6 @@ body {
 
 .contacts__item:not(:last-child) {
   margin-right: 16px;
-}
-
-.contacts::after {
-  content: "";
-  width: 2px;
-  height: 32px;
-  margin: 0 20px;
-  background-color: #EAEAEA;
-  /*закруглить края палки*/
 }
 
 .actions {
