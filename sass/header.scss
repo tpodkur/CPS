@@ -1,70 +1,64 @@
-body {
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 .header {
   height: 88px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+  border-bottom: 1px solid #D9FFF5;
 
-.header__logo-box {
-  margin-left: 16px;
-}
+  &__logo-box {
+    margin-left: 16px;
+  }
 
-.header__separator {
-  width: 2px;
-  height: 32px;
-  background-color: #EAEAEA;
-}
+  &__separator {
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+  }
 
-.header__contacts {
-  margin-right: 16px;
-}
+  &__contacts {
+    margin-right: 16px;
+  }
 
-.header__actions {
-  margin-left: 16px;
+  &__actions {
+    margin-left: 16px;
+  }
+
+  &__links {
+    display: flex;
+    margin-right: 40px;
+  }
 }
 
 .logo-box {
   display: flex;
   align-items: center;
-}
 
-.logo-box__menu {
-  margin-right: 20px;
-}
+  &__menu {
+    margin-right: 20px;
+  }
 
-.logo-box__logo {
-  margin-left: 20px;
-}
-
-.header__links {
-  display: flex;
-  margin-right: 40px;
-}
-
-.header__button {
-  margin: 0 16px;
+  &__logo {
+    margin-left: 20px;
+  }
 }
 
 .contacts {
   display: flex;
   align-items: center;
-}
 
-.contacts__item:not(:last-child) {
-  margin-right: 16px;
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 
 .actions {
   display: flex;
-}
 
-.actions__item:not(:last-child) {
-  margin-right: 16px;
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 
 .b-button {
@@ -100,10 +94,4 @@ body {
 
 .tools-button {
   background-image: url("../assets/icons/tools.svg");
-}
-
-.logo {
-  width: 96px;
-  height: 50px;
-  background-image: url("../assets/icons/logo.svg");
 }

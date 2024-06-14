@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 96px;
+  height: 50px;
+  background-image: url("../assets/icons/logo.svg");
+}
+
+.header {
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #D9FFF5;
+}
+.header__logo-box {
+  margin-left: 16px;
+}
+.header__separator {
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+}
+.header__contacts {
+  margin-right: 16px;
+}
+.header__actions {
+  margin-left: 16px;
+}
+.header__links {
+  display: flex;
+  margin-right: 40px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+.logo-box__menu {
+  margin-right: 20px;
+}
+.logo-box__logo {
+  margin-left: 20px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.actions {
+  display: flex;
+}
+.actions__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.b-button {
+  width: 40px;
+  height: 40px;
+  background-color: #FF3E79;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 50%;
+  border: none;
+}
+
+.menu-button {
+  background-image: url("../assets/icons/hamburger-icon.svg");
+}
+
+.phone-button {
+  background-image: url("../assets/icons/tel.svg");
+}
+
+.message-button {
+  background-image: url("../assets/icons/message.svg");
+}
+
+.contact-button {
+  background-image: url("../assets/icons/contact.svg");
+}
+
+.search-button {
+  background-image: url("../assets/icons/search.svg");
+}
+
+.tools-button {
+  background-image: url("../assets/icons/tools.svg");
+}
+
+/*# sourceMappingURL=styles.css.map */
