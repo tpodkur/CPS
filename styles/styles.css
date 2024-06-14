@@ -1,6 +1,24 @@
-body {
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../assets/fonts/TTLakes/TTLakes-Regular.eot");
+  src: url("../assets/fonts/TTLakes/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TTLakes/TTLakes-Regular.woff") format("woff"), url("../assets/fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../assets/fonts/TTLakes/TTLakes-Bold.eot");
+  src: url("../assets/fonts/TTLakes/TTLakes-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/TTLakes/TTLakes-Bold.woff") format("woff"), url("../assets/fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+body, main, ul, ol, h1 {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F8F8;
 }
 
 .logo {
@@ -15,6 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #D9FFF5;
+  background-color: white;
 }
 .header__logo-box {
   margin-left: 16px;
@@ -93,6 +112,15 @@ body {
 
 .tools-button {
   background-image: url("../assets/icons/tools.svg");
+}
+
+.services-page {
+  padding-top: 24px;
+}
+
+h1 {
+  font-family: "TT Lakes", sans-serif;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */
