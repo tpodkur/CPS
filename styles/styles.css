@@ -21,6 +21,10 @@ body {
   background-color: #F8F8F8;
 }
 
+html {
+  font-family: "TT Lakes", sans-serif;
+}
+
 .logo {
   width: 96px;
   height: 50px;
@@ -117,9 +121,20 @@ body {
 .services-page {
   padding-top: 24px;
 }
+.services-page__title {
+  display: flex;
+  align-items: center;
+}
+.services-page__title::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  display: inline-block;
+  margin-right: 20px;
+  background-image: url("../assets/icons/highlight.svg");
+}
 
-h1 {
-  font-family: "TT Lakes", sans-serif;
+.page-title {
   font-weight: bold;
 }
 

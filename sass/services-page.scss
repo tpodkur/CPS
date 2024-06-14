@@ -1,9 +1,23 @@
-@import "variables";
+@import 'variables';
 
 .services-page {
   padding-top: 24px;
 
   &__title {
-    font-weight: bold;,
+    display: flex;
+    align-items: center;
   }
+
+  &__title::before {
+    content: '';
+    width: 4px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 20px;
+    background-image: url('../assets/icons/highlight.svg');
+  }
+}
+
+.page-title {
+  font-weight: bold;
 }
