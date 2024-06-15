@@ -16,16 +16,20 @@
     margin-right: 20px;
     background-image: url('../assets/icons/highlight.svg');
   }
+
+  &__content {
+    margin: 32px 0 0 24px;
+  }
+
+  &__tab {
+    margin-top: 32px;
+  }
 }
 
 .page-title {
   font-size: 28px;
   line-height: 40px;
   color: $text-color;
-}
-
-.services-page__nav {
-  margin: 32px 0 0 24px;
 }
 
 .services-navigation {
@@ -45,5 +49,26 @@
       border: 2px solid $border-color;
       border-radius: 6px;
     }
+  }
+}
+
+.tab {
+  width: 720px;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    width: 312px;
+    height: 160px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 360px;
+    height: 208px;
+    border-radius: 7px;
   }
 }

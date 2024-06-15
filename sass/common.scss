@@ -2,9 +2,10 @@
 
 html {
   font-family: 'TT Lakes', sans-serif;
+  color: $text-color;
 }
 
-body, main, ul, ol, h1 {
+body, main, ul, ol, h1, p {
   margin: 0;
   box-sizing: border-box;
 }

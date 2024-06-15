@@ -1,8 +1,9 @@
 html {
   font-family: "TT Lakes", sans-serif;
+  color: #1B1C21;
 }
 
-body, main, ul, ol, h1 {
+body, main, ul, ol, h1, p {
   margin: 0;
   box-sizing: border-box;
 }
@@ -126,15 +127,17 @@ button {
   margin-right: 20px;
   background-image: url("../assets/icons/highlight.svg");
 }
+.services-page__content {
+  margin: 32px 0 0 24px;
+}
+.services-page__tab {
+  margin-top: 32px;
+}
 
 .page-title {
   font-size: 28px;
   line-height: 40px;
   color: #1B1C21;
-}
-
-.services-page__nav {
-  margin: 32px 0 0 24px;
 }
 
 .services-navigation {
@@ -153,6 +156,25 @@ button {
   background-color: white;
   border: 2px solid #D9FFF5;
   border-radius: 6px;
+}
+
+.tab {
+  width: 720px;
+  display: flex;
+  justify-content: space-between;
+}
+.tab__text {
+  width: 312px;
+  height: 160px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+}
+.tab__image {
+  width: 360px;
+  height: 208px;
+  border-radius: 7px;
 }
 
 @font-face {
