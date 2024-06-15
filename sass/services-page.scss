@@ -21,14 +21,29 @@
 .page-title {
   font-size: 28px;
   line-height: 40px;
+  color: $text-color;
 }
 
 .services-page__nav {
   margin: 32px 0 0 24px;
 }
 
-.services-button {
-  font-size: 16px;
-  font-family: 'TT Lakes', sans-serif;
-  font-weight: 500;
+.services-navigation {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 0;
+
+  &__item {
+    font-size: 16px;
+    font-family: 'TT Lakes', sans-serif;
+    font-weight: 500;
+    padding: 6px 8px 6px 14px;
+    color: $button-text-color;
+
+    &_selected {
+      background-color: white;
+      border: 2px solid $border-color;
+      border-radius: 6px;
+    }
+  }
 }
