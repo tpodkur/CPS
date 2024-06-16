@@ -237,11 +237,12 @@ button {
   }
   .tab {
     width: 720px;
+    margin: 32px 0 0 24px;
     flex-direction: row;
     justify-content: space-between;
   }
   .tab__text-box {
-    margin: 32px 0 0 24px;
+    margin: 0;
   }
   .tab__text {
     width: 312px;
@@ -268,6 +269,28 @@ button {
   .services-page__actions {
     display: flex;
     margin-right: 32px;
+  }
+  .services-navigation {
+    margin: 8px 25px 0 33px;
+    white-space: wrap;
+    overflow: auto;
+  }
+  .tab {
+    width: 1057px;
+    margin: 16px 0 0 33px;
+  }
+  .tab__text-box {
+    margin: 0;
+  }
+  .tab__text {
+    width: 490px;
+  }
+  .tab__image {
+    width: 531px;
+    height: 307px;
+  }
+  .tab__read-more-button {
+    margin: 13px 0 0 0;
   }
 }
 @font-face {

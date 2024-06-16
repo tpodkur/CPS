@@ -101,11 +101,12 @@
 
   .tab {
     width: 720px;
+    margin: 32px 0 0 24px;
     flex-direction: row;
     justify-content: space-between;
 
     &__text-box {
-      margin: 32px 0 0 24px;
+      margin: 0;
     }
 
     &__text {
@@ -138,6 +139,34 @@
     &__actions {
       display: flex;
       margin-right: 32px;
+    }
+  }
+
+  .services-navigation {
+    margin: 8px 25px 0 33px;
+    white-space: wrap;
+    overflow: auto;
+  }
+
+  .tab {
+    width: 1057px;
+    margin: 16px 0 0 33px;
+
+    &__text-box {
+      margin: 0;
+    }
+
+    &__text {
+      width: 490px;
+    }
+
+    &__image {
+      width: 531px;
+      height: 307px;
+    }
+
+    &__read-more-button {
+      margin: 13px 0 0 0;
     }
   }
 }
