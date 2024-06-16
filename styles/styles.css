@@ -17,6 +17,7 @@ button {
   padding: 0;
   border: none;
   background: transparent;
+  font-family: "TT Lakes", sans-serif;
 }
 
 .logo {
@@ -40,6 +41,7 @@ button {
   width: 2px;
   height: 32px;
   background-color: #EAEAEA;
+  border-radius: 1px;
 }
 .header__contacts {
   margin-right: 16px;
@@ -49,6 +51,7 @@ button {
 }
 .header__links {
   display: flex;
+  align-items: center;
   margin-right: 40px;
 }
 
@@ -89,7 +92,7 @@ button {
 }
 
 .menu-button {
-  background-image: url("../assets/icons/hamburger-icon.svg");
+  background-image: url("../assets/icons/hamburger.svg");
 }
 
 .phone-button {
@@ -147,7 +150,6 @@ button {
 }
 .services-navigation__item {
   font-size: 16px;
-  font-family: "TT Lakes", sans-serif;
   font-weight: 500;
   padding: 6px 8px 6px 14px;
   color: #7E7E82;
@@ -175,6 +177,26 @@ button {
   width: 360px;
   height: 208px;
   border-radius: 7px;
+}
+.tab__text-box {
+  display: flex;
+  flex-direction: column;
+}
+.tab__read-more-button {
+  margin-top: 10px;
+}
+
+.read-more-button {
+  width: 132px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: right;
+  color: #1B1C21;
+  background-image: url("../assets/icons/read-more.svg");
+  background-size: 10px 23px;
+  background-repeat: no-repeat;
+  background-position: left 8px top 50%;
 }
 
 @font-face {

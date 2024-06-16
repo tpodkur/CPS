@@ -16,6 +16,7 @@
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
+    border-radius: 1px;
   }
 
   &__contacts {
@@ -28,6 +29,7 @@
 
   &__links {
     display: flex;
+    align-items: center;
     margin-right: 40px;
   }
 }
@@ -74,7 +76,7 @@
 }
 
 .menu-button {
-  background-image: url("../assets/icons/hamburger-icon.svg");
+  background-image: url("../assets/icons/hamburger.svg");
 }
 
 .phone-button {
