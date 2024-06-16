@@ -2,35 +2,20 @@
 
 .header {
   height: 88px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $border-color;
   background-color: white;
 
-  &__logo-box {
-    margin-left: 16px;
-  }
-
-  &__separator {
-    width: 2px;
-    height: 32px;
-    background-color: #EAEAEA;
-    border-radius: 1px;
-  }
-
-  &__contacts {
-    margin-right: 16px;
-  }
-
   &__actions {
-    margin-left: 16px;
+    margin-left: 20px;
   }
 
   &__links {
     display: flex;
     align-items: center;
-    margin-right: 40px;
   }
 }
 
@@ -38,22 +23,24 @@
   display: flex;
   align-items: center;
 
-  &__menu {
-    margin-right: 20px;
+  &__logo {
+    margin: 0 16px;
   }
 
-  &__logo {
-    margin-left: 20px;
+  &__separator {
+    display: none;
   }
 }
 
-.contacts {
-  display: flex;
-  align-items: center;
+.separator {
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+  border-radius: 1px;
+}
 
-  &__item:not(:last-child) {
-    margin-right: 16px;
-  }
+.contacts {
+  display: none;
 }
 
 .actions {
@@ -79,22 +66,58 @@
   background-image: url("../assets/icons/hamburger.svg");
 }
 
-.phone-button {
-  background-image: url("../assets/icons/tel.svg");
-}
-
-.message-button {
-  background-image: url("../assets/icons/message.svg");
-}
-
-.contact-button {
-  background-image: url("../assets/icons/contact.svg");
-}
-
 .search-button {
   background-image: url("../assets/icons/search.svg");
 }
 
 .tools-button {
   background-image: url("../assets/icons/tools.svg");
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 0 24px;
+
+    &__contacts {
+      margin-right: 20px;
+    }
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+
+    &__item:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  .logo-box {
+    display: flex;
+    align-items: center;
+
+    &__menu {
+      margin-right: 20px;
+    }
+
+    &__logo {
+      margin: 0 0 0 20px;
+    }
+
+    &__separator {
+      display: block;
+    }
+  }
+
+  .phone-button {
+    background-image: url("../assets/icons/tel.svg");
+  }
+
+  .message-button {
+    background-image: url("../assets/icons/message.svg");
+  }
+
+  .contact-button {
+    background-image: url("../assets/icons/contact.svg");
+  }
 }

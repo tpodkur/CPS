@@ -28,50 +28,41 @@ button {
 
 .header {
   height: 88px;
+  padding: 0 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #D9FFF5;
   background-color: white;
 }
-.header__logo-box {
-  margin-left: 16px;
-}
-.header__separator {
-  width: 2px;
-  height: 32px;
-  background-color: #EAEAEA;
-  border-radius: 1px;
-}
-.header__contacts {
-  margin-right: 16px;
-}
 .header__actions {
-  margin-left: 16px;
+  margin-left: 20px;
 }
 .header__links {
   display: flex;
   align-items: center;
-  margin-right: 40px;
 }
 
 .logo-box {
   display: flex;
   align-items: center;
 }
-.logo-box__menu {
-  margin-right: 20px;
-}
 .logo-box__logo {
-  margin-left: 20px;
+  margin: 0 16px;
+}
+.logo-box__separator {
+  display: none;
+}
+
+.separator {
+  width: 2px;
+  height: 32px;
+  background-color: #EAEAEA;
+  border-radius: 1px;
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-}
-.contacts__item:not(:last-child) {
-  margin-right: 16px;
+  display: none;
 }
 
 .actions {
@@ -95,18 +86,6 @@ button {
   background-image: url("../assets/icons/hamburger.svg");
 }
 
-.phone-button {
-  background-image: url("../assets/icons/tel.svg");
-}
-
-.message-button {
-  background-image: url("../assets/icons/message.svg");
-}
-
-.contact-button {
-  background-image: url("../assets/icons/contact.svg");
-}
-
 .search-button {
   background-image: url("../assets/icons/search.svg");
 }
@@ -115,6 +94,43 @@ button {
   background-image: url("../assets/icons/tools.svg");
 }
 
+@media (min-width: 768px) {
+  .header {
+    padding: 0 24px;
+  }
+  .header__contacts {
+    margin-right: 20px;
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+  }
+  .contacts__item:not(:last-child) {
+    margin-right: 16px;
+  }
+  .logo-box {
+    display: flex;
+    align-items: center;
+  }
+  .logo-box__menu {
+    margin-right: 20px;
+  }
+  .logo-box__logo {
+    margin: 0 0 0 20px;
+  }
+  .logo-box__separator {
+    display: block;
+  }
+  .phone-button {
+    background-image: url("../assets/icons/tel.svg");
+  }
+  .message-button {
+    background-image: url("../assets/icons/message.svg");
+  }
+  .contact-button {
+    background-image: url("../assets/icons/contact.svg");
+  }
+}
 .services-page {
   padding-top: 24px;
 }
@@ -145,7 +161,7 @@ button {
 
 .services-navigation {
   white-space: nowrap;
-  overflow: hidden;
+  overflow: scroll;
   font-size: 0;
 }
 .services-navigation__item {
