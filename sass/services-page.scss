@@ -39,12 +39,11 @@
 
   &__item {
     font-size: 16px;
-    //font-family: 'TT Lakes', sans-serif;
     font-weight: 500;
     padding: 6px 8px 6px 14px;
     color: $button-text-color;
 
-    &_selected {
+    &--selected {
       background-color: white;
       border: 2px solid $border-color;
       border-radius: 6px;
