@@ -6,23 +6,15 @@
   &__title {
     display: flex;
     align-items: center;
-  }
 
-  &__title::before {
-    content: '';
-    width: 4px;
-    height: 40px;
-    display: inline-block;
-    margin-right: 20px;
-    background-image: url('../assets/icons/highlight.svg');
-  }
-
-  &__content {
-    margin: 32px 0 0 24px;
-  }
-
-  &__tab {
-    margin-top: 32px;
+    &::before {
+      content: '';
+      width: 4px;
+      height: 40px;
+      display: inline-block;
+      margin-right: 12px;
+      background-image: url('../assets/icons/highlight.svg');
+    }
   }
 
   &__actions {
@@ -37,6 +29,7 @@
 }
 
 .services-navigation {
+  margin: 24px 0 0 16px;
   white-space: nowrap;
   overflow: scroll;
   font-size: 0;
@@ -56,32 +49,26 @@
 }
 
 .tab {
-  width: 720px;
   display: flex;
-  justify-content: space-between;
-
-  &__text {
-    width: 312px;
-    height: 160px;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0.2px;
-    overflow: hidden;
-  }
-
-  &__image {
-    width: 360px;
-    height: 208px;
-    border-radius: 7px;
-  }
+  flex-direction: column;
 
   &__text-box {
+    margin: 24px 0 0 16px;
     display: flex;
     flex-direction: column;
   }
 
+  &__text {
+    width: 288px;
+    height: 90px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    overflow: hidden;
+  }
+
   &__read-more-button {
-    margin-top: 10px;
+    margin: 16px 0;
   }
 }
 
@@ -96,6 +83,47 @@
   background-size: 10px 23px;
   background-repeat: no-repeat;
   background-position: left 8px top 50%;
+}
+
+@media (min-width: 768px) {
+  .services-page {
+
+    &__title {
+      &::before {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .services-navigation {
+    margin: 32px 0 0 24px;
+  }
+
+  .tab {
+    width: 720px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__text-box {
+      margin: 32px 0 0 24px;
+    }
+
+    &__text {
+      width: 312px;
+      height: 160px;
+      line-height: 20px;
+    }
+
+    &__image {
+      width: 360px;
+      height: 208px;
+      border-radius: 7px;
+    }
+
+    &__read-more-button {
+      margin: 10px 0 0 0;
+    }
+  }
 }
 
 @media (min-width: 1120px) {

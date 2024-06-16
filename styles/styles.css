@@ -18,6 +18,7 @@ button {
   border: none;
   background: transparent;
   font-family: "TT Lakes", sans-serif;
+  cursor: pointer;
 }
 
 .logo {
@@ -162,14 +163,8 @@ button {
   width: 4px;
   height: 40px;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 12px;
   background-image: url("../assets/icons/highlight.svg");
-}
-.services-page__content {
-  margin: 32px 0 0 24px;
-}
-.services-page__tab {
-  margin-top: 32px;
 }
 .services-page__actions {
   display: none;
@@ -182,6 +177,7 @@ button {
 }
 
 .services-navigation {
+  margin: 24px 0 0 16px;
   white-space: nowrap;
   overflow: scroll;
   font-size: 0;
@@ -199,29 +195,24 @@ button {
 }
 
 .tab {
-  width: 720px;
-  display: flex;
-  justify-content: space-between;
-}
-.tab__text {
-  width: 312px;
-  height: 160px;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  overflow: hidden;
-}
-.tab__image {
-  width: 360px;
-  height: 208px;
-  border-radius: 7px;
-}
-.tab__text-box {
   display: flex;
   flex-direction: column;
 }
+.tab__text-box {
+  margin: 24px 0 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+.tab__text {
+  width: 288px;
+  height: 90px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  overflow: hidden;
+}
 .tab__read-more-button {
-  margin-top: 10px;
+  margin: 16px 0;
 }
 
 .read-more-button {
@@ -237,6 +228,35 @@ button {
   background-position: left 8px top 50%;
 }
 
+@media (min-width: 768px) {
+  .services-page__title::before {
+    margin-right: 20px;
+  }
+  .services-navigation {
+    margin: 32px 0 0 24px;
+  }
+  .tab {
+    width: 720px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .tab__text-box {
+    margin: 32px 0 0 24px;
+  }
+  .tab__text {
+    width: 312px;
+    height: 160px;
+    line-height: 20px;
+  }
+  .tab__image {
+    width: 360px;
+    height: 208px;
+    border-radius: 7px;
+  }
+  .tab__read-more-button {
+    margin: 10px 0 0 0;
+  }
+}
 @media (min-width: 1120px) {
   .services-page {
     padding-top: 42px;
