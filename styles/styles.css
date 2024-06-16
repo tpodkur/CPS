@@ -73,6 +73,14 @@ button {
 }
 
 .b-button {
+  display: flex;
+  align-items: center;
+}
+.b-button__text {
+  display: none;
+}
+
+.b-button-icon {
   width: 40px;
   height: 40px;
   background-color: #FF3E79;
@@ -131,6 +139,17 @@ button {
     background-image: url("../assets/icons/contact.svg");
   }
 }
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+  .b-button__text {
+    display: flex;
+    margin-right: 9px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
 .services-page {
   padding-top: 24px;
 }
@@ -151,6 +170,9 @@ button {
 }
 .services-page__tab {
   margin-top: 32px;
+}
+.services-page__actions {
+  display: none;
 }
 
 .page-title {
@@ -215,6 +237,19 @@ button {
   background-position: left 8px top 50%;
 }
 
+@media (min-width: 1120px) {
+  .services-page {
+    padding-top: 42px;
+  }
+  .services-page__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .services-page__actions {
+    display: flex;
+    margin-right: 32px;
+  }
+}
 @font-face {
   font-family: "TT Lakes";
   src: url("../assets/fonts/TTLakes/TTLakes-Italic.eot");

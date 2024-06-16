@@ -24,6 +24,10 @@
   &__tab {
     margin-top: 32px;
   }
+
+  &__actions {
+    display: none;
+  }
 }
 
 .page-title {
@@ -92,4 +96,20 @@
   background-size: 10px 23px;
   background-repeat: no-repeat;
   background-position: left 8px top 50%;
+}
+
+@media (min-width: 1120px) {
+  .services-page {
+    padding-top: 42px;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__actions {
+      display: flex;
+      margin-right: 32px;
+    }
+  }
 }

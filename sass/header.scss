@@ -52,6 +52,15 @@
 }
 
 .b-button {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    display: none;
+  }
+}
+
+.b-button-icon {
   width: 40px;
   height: 40px;
 
@@ -119,5 +128,20 @@
 
   .contact-button {
     background-image: url("../assets/icons/contact.svg");
+  }
+}
+
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+
+  .b-button {
+    &__text {
+      display: flex;
+      margin-right: 9px;
+      font-size: 16px;
+      font-weight: 500;
+    }
   }
 }
