@@ -13,7 +13,8 @@
       height: 40px;
       display: inline-block;
       margin-right: 12px;
-      background-image: url('../assets/icons/highlight.svg');
+      background-color: $decor-elements-color;
+      border-radius: 0 5px 5px 0;
     }
   }
 
@@ -143,6 +144,12 @@
     &__actions {
       display: flex;
       margin-right: 32px;
+    }
+
+    &__title {
+      &::before {
+        margin-right: 30px;
+      }
     }
   }
 

@@ -12,8 +12,8 @@ html {
 body,
 h1,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li {
   margin: 0;
 }
@@ -159,7 +159,8 @@ button {
   height: 40px;
   display: inline-block;
   margin-right: 12px;
-  background-image: url("../assets/icons/highlight.svg");
+  background-color: #41F6D7;
+  border-radius: 0 5px 5px 0;
 }
 .services-page__actions {
   display: none;
@@ -267,6 +268,9 @@ button {
   .services-page__actions {
     display: flex;
     margin-right: 32px;
+  }
+  .services-page__title::before {
+    margin-right: 30px;
   }
   .services-navigation {
     margin: 8px 25px 0 33px;
@@ -683,7 +687,36 @@ button {
 .menu__logo {
   margin-left: 18px;
 }
-
+.menu__box {
+  margin-top: 46px;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 32px;
+  color: #1B1C21;
+  vertical-align: center;
+}
+.menu__item--active {
+  color: #7E7E82;
+}
+.menu__item--active::before {
+  content: "";
+  width: 4px;
+  height: 32px;
+  display: inline-block;
+  background-color: #41F6D7;
+  border-radius: 0 5px 5px 0;
+}
+.menu__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+.menu__link {
+  position: absolute;
+  left: 24px;
+  font-size: 16px;
+}
 .menu-icon {
   background-image: url("../assets/icons/hamburger.svg");
 }

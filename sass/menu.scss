@@ -13,5 +13,45 @@
   &__logo {
     margin-left: 18px;
   }
+
+  &__box {
+    margin-top: 46px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 32px;
+    color: $text-color;
+    vertical-align: center;
+
+    &--active {
+      color: $button-text-color;
+
+      &::before {
+        content: '';
+        width: 4px;
+        height: 32px;
+        display: inline-block;
+        background-color: $decor-elements-color;
+        border-radius: 0 5px 5px 0;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    left: 24px;
+    font-size: 16px;
+  }
+
+  &__footer {
+
+  }
 }
 
