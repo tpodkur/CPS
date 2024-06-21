@@ -71,18 +71,6 @@
   border: none;
 }
 
-.menu-button {
-  background-image: url("../assets/icons/hamburger.svg");
-}
-
-.search-button {
-  background-image: url("../assets/icons/search.svg");
-}
-
-.tools-button {
-  background-image: url("../assets/icons/tools.svg");
-}
-
 @media (min-width: 768px) {
   .header {
     padding: 0 24px;
@@ -116,18 +104,6 @@
     &__separator {
       display: block;
     }
-  }
-
-  .phone-button {
-    background-image: url("../assets/icons/tel.svg");
-  }
-
-  .message-button {
-    background-image: url("../assets/icons/message.svg");
-  }
-
-  .contact-button {
-    background-image: url("../assets/icons/contact.svg");
   }
 }
 
