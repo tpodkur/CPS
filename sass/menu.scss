@@ -109,3 +109,12 @@
     text-transform: uppercase;
   }
 }
+
+.b-button {
+  transition: opacity 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

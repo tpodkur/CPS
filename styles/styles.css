@@ -769,6 +769,14 @@ button {
   text-transform: uppercase;
 }
 
+.b-button {
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.b-button:hover {
+  opacity: 0.5;
+}
+
 .menu-icon {
   background-image: url("../assets/icons/hamburger.svg");
 }
