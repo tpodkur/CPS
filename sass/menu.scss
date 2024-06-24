@@ -4,7 +4,8 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;;
+  box-shadow: 16px 0px 52px 0px #0E185033;
 
   &__header {
     padding: 18px 24px 0 24px;
@@ -57,10 +58,6 @@
     margin: 50px 0 32px 24px;
   }
 
-  //&__contacts {
-  //
-  //}
-
   &__email {
     display: inline-block;
     margin: 16px 0 12px 0;
@@ -82,13 +79,26 @@
   }
 }
 
+.menu-contacts {
+  display: flex;
+  align-items: center;
+
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
 .languages {
   display: flex;
   justify-content: space-between;
 
-  //&__radio {
-  //  display: none;
-  //}
+  &__radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
 
   &__radio:checked + .languages__label {
     color: $button-text-color;
@@ -99,11 +109,3 @@
     text-transform: uppercase;
   }
 }
-
-// придумать, как переиспользовать .contacts
-// правильно спрятать radio-button
-// подумать, выделить ли что-то из .menu в отдельные блоки
-// разобраться, норм ли оформлен код input в html (name...)
-// норм ли, что инпуты внутри списка
-// у элементов списка нет классов
-// лишняя div обёртка
