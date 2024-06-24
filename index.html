@@ -7,76 +7,51 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="header">
-    <div class="logo-box">
-      <button class="logo-box__menu b-button-icon menu-icon"></button>
-      <div class="logo-box__separator separator"></div>
-      <div class="logo-box__logo logo"></div>
-    </div>
-    <div class="header__links">
-      <div class="header__contacts contacts">
-        <button class="contacts__item b-button-icon phone-icon"></button>
-        <button class="contacts__item b-button-icon message-icon"></button>
-        <button class="contacts__item b-button-icon contact-icon"></button>
-      </div>
-      <div class="separator"></div>
-      <div class="header__actions actions">
-        <button class="actions__item b-button">
-          <span class="b-button__text">Оставить заявку</span>
-          <span class="b-button-icon tools-icon"></span>
-        </button>
-        <button class="actions__item b-button">
-          <span class="b-button__text">Статус ремонта</span>
-          <span class="b-button-icon search-icon"></span>
-        </button>
-      </div>
-    </div>
-  </header>
 
-  <main>
-    <section class="services-page">
-      <div class="services-page__header">
-        <div class="services-page__title">
-          <h1 class="page-title">Услуги и сервисы</h1>
-        </div>
-        <div class="services-page__actions actions">
-          <button class="actions__item b-button">
-            <span class="b-button__text">Оставить заявку</span>
-            <span class="b-button-icon tools-icon"></span>
-          </button>
-          <button class="actions__item b-button">
-            <span class="b-button__text">Статус ремонта</span>
-            <span class="b-button-icon search-icon"></span>
-          </button>
-        </div>
+<nav class="menu">
+  <div>
+    <header class="menu__header">
+      <div class="logo-box">
+        <button class="b-button-icon cross-icon"></button>
+        <div class="menu__logo logo"></div>
       </div>
+      <button class="b-button-icon loupe-icon"></button>
+    </header>
+    <ul class="menu__box">
+      <li class="menu__item menu__item--active"><button class="menu__link">Ремонт техники</button></li>
+      <li class="menu__item"><button class="menu__link">Услуги и сервисы</button></li>
+      <li class="menu__item"><button class="menu__link">Корпоративным клиентам</button></li>
+      <li class="menu__item"><button class="menu__link">Продавцам техники</button></li>
+      <li class="menu__item"><button class="menu__link">Партнерам</button></li>
+      <li class="menu__item"><button class="menu__link">Производителям</button></li>
+      <li class="menu__item"><button class="menu__link">Наши сервисные центры</button></li>
+      <li class="menu__item"><button class="menu__link">Контакты</button></li>
+    </ul>
+  </div>
+  <footer class="menu__footer">
+    <div class="menu-contacts">
+      <button class="menu-contacts__item b-button-icon phone-icon"></button>
+      <button class="menu-contacts__item b-button-icon message-icon"></button>
+      <button class="menu-contacts__item b-button-icon contact-icon"></button>
+    </div>
+    <p class="menu__email">mail@cps.com<p>
+    <p class="menu__phone">8 800 890 8900<p>
+    <ul class="menu__languages languages">
+      <li>
+        <input type="radio" id="lang-ru" name="lang-radio-button" class="languages__radio">
+        <label for="lang-ru" class="languages__label">ru</label>
+      </li>
+      <li>
+        <input type="radio" id="lang-en" name="lang-radio-button" class="languages__radio">
+        <label for="lang-en" class="languages__label">en</label>
+      </li>
+      <li>
+        <input type="radio" id="lang-ch" name="lang-radio-button" class="languages__radio">
+        <label for="lang-ch" class="languages__label">ch</label>
+      </li>
+    </ul>
+  </footer>
+</nav>
 
-      <nav class="services-navigation">
-        <ul class="services-navigation__wrapper">
-          <li><button class="services-navigation__item services-navigation__item--selected">Ремонтируемые бренды</button></li>
-          <li><button class="services-navigation__item">Ремонтируемые устройства</button></li>
-          <li><button class="services-navigation__item">Цены на услуги</button></li>
-          <li><button class="services-navigation__item">Адреса сервисных центров</button></li>
-          <li><button class="services-navigation__item">Специальные цены</button></li>
-          <li><button class="services-navigation__item">Отзывы</button></li>
-        </ul>
-      </nav>
-      <div class="tab">
-        <div class="tab__text-box">
-          <div class="tab__text">
-            <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <br>
-            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
-          </div>
-          <button class="tab__read-more-button read-more-button">Читать далее</button>
-        </div>
-        <img
-          src="assets/images/logo.jpg"
-          alt="фото таблички с логотипом CPS на стене"
-          class="tab__image"
-        >
-      </div>
-    </section>
-  </main>
 </body>
 </html>
