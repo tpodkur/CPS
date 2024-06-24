@@ -105,6 +105,11 @@ button {
   background-position: 50% 50%;
   border-radius: 50%;
   border: none;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+.b-button-icon:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
@@ -767,14 +772,6 @@ button {
 .languages__label {
   color: #1B1C21;
   text-transform: uppercase;
-}
-
-.b-button {
-  transition: opacity 0.5s;
-  cursor: pointer;
-}
-.b-button:hover {
-  opacity: 0.5;
 }
 
 .menu-icon {
