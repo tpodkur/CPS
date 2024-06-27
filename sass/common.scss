@@ -20,6 +20,10 @@ li {
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 ul[class],
 ol[class] {
   padding: 0;
@@ -27,7 +31,7 @@ ol[class] {
 }
 
 body {
-  background-color: $background-primary-color;
+  background-color: $background-color-primary;
 }
 
 button {

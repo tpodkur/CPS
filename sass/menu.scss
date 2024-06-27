@@ -31,7 +31,7 @@
     vertical-align: center;
 
     &--active {
-      color: $button-text-color;
+      color: $text-color-light;
 
       &::before {
         content: '';
@@ -59,11 +59,13 @@
   }
 
   &__email {
-    display: inline-block;
+    display: block;
     margin: 16px 0 12px 0;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
+    text-decoration: none;
+    color: $text-color;
   }
 
   &__phone {
@@ -71,6 +73,8 @@
     font-weight: bold;
     line-height: 32px;
     letter-spacing: -0.6px;
+    text-decoration: none;
+    color: $text-color;
   }
 
   &__languages {
@@ -101,11 +105,23 @@
   }
 
   &__radio:checked + .languages__label {
-    color: $button-text-color;
+    color: $text-color-light;
+
+    &:hover {
+      color: $decor-elements-color;
+      cursor: pointer;
+    }
   }
 
   &__label {
     color: $text-color;
     text-transform: uppercase;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $decor-elements-color;
+      cursor: pointer;
+    }
   }
 }
