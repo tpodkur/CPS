@@ -731,17 +731,21 @@ button {
   margin: 50px 0 32px 24px;
 }
 .menu__email {
-  display: inline-block;
+  display: block;
   margin: 16px 0 12px 0;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
+  text-decoration: none;
+  color: #1B1C21;
 }
 .menu__phone {
   font-size: 24px;
   font-weight: bold;
   line-height: 32px;
   letter-spacing: -0.6px;
+  text-decoration: none;
+  color: #1B1C21;
 }
 .menu__languages {
   width: 87px;
@@ -770,9 +774,19 @@ button {
 .languages__radio:checked + .languages__label {
   color: #7E7E82;
 }
+.languages__radio:checked + .languages__label:hover {
+  color: #41F6D7;
+  cursor: pointer;
+}
 .languages__label {
   color: #1B1C21;
   text-transform: uppercase;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.languages__label:hover {
+  color: #41F6D7;
+  cursor: pointer;
 }
 
 .b-button-icon--menu {
