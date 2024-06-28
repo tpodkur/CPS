@@ -32,3 +32,60 @@
 
   }
 }
+
+.tech-item-button {
+  width: 240px;
+  height: 72px;
+  margin: 0 16px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid $grey-light-color;
+}
+
+.tech-item-button--acer {
+  background-image: url('../assets/icons/tech-logos/acer.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.apple {
+  background-image: url('../assets/icons/tech-logos/apple.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--bosch {
+  background-image: url('../assets/icons/tech-logos/bosch.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--hp {
+  background-image: url('../assets/icons/tech-logos/hp.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--lenovo {
+  background-image: url('../assets/icons/tech-logos/lenovo.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--samsung {
+  background-image: url('../assets/icons/tech-logos/samsung.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--sony {
+  background-image: url('../assets/icons/tech-logos/sony.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--view-sonic {
+  background-image: url('../assets/icons/tech-logos/view-sonic.svg');
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}

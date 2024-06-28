@@ -841,12 +841,65 @@ button {
   letter-spacing: -0.2px;
   color: #7E7E82;
 }
-.test {
-  height: 200px;
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
+.tech-item-button {
+  width: 240px;
+  height: 72px;
+  margin: 0 16px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #EAEAEA;
+}
+
+.tech-item-button--acer {
+  background-image: url("../assets/icons/tech-logos/acer.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.apple {
+  background-image: url("../assets/icons/tech-logos/apple.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--bosch {
+  background-image: url("../assets/icons/tech-logos/bosch.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--hp {
+  background-image: url("../assets/icons/tech-logos/hp.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--lenovo {
+  background-image: url("../assets/icons/tech-logos/lenovo.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--samsung {
+  background-image: url("../assets/icons/tech-logos/samsung.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--sony {
+  background-image: url("../assets/icons/tech-logos/sony.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.tech-item-button--view-sonic {
+  background-image: url("../assets/icons/tech-logos/view-sonic.svg");
+  background-repeat: no-repeat;
+  background-position: 16px center;
+}
+
+.swiper-container {
+  height: 116px;
   margin: 0;
   padding: 0;
 }
@@ -854,22 +907,6 @@ button {
 .swiper {
   width: 100%;
   height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */
